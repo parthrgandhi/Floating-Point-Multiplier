@@ -1,0 +1,104 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: I-2013.12-SP5-4
+Date   : Tue Nov 24 05:22:13 2015
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: enclosed
+
+  Startpoint: x1/a_out_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: y1/ctemp24_reg[46]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                140000                saed90nm_typ
+  alu                35000                 saed90nm_typ
+  alu_DW02_mult_0    35000                 saed90nm_typ
+  alu_DW01_add_2     8000                  saed90nm_typ
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  x1/a_out_reg[1]/CLK (DFFARX1)                           0.00 #     0.00 r
+  x1/a_out_reg[1]/Q (DFFARX1)                             0.17       0.17 r
+  x1/a_out[1] (controlunit)                               0.00       0.17 r
+  y1/a[1] (alu)                                           0.00       0.17 r
+  y1/U16/Z (DELLN1X2)                                     0.52       0.68 r
+  y1/mult_74/A[1] (alu_DW02_mult_0)                       0.00       0.68 r
+  y1/mult_74/U2698/ZN (INVX0)                             0.13       0.81 f
+  y1/mult_74/U2696/QN (NOR2X0)                            0.11       0.92 r
+  y1/mult_74/U564/Q (AND2X1)                              0.12       1.03 r
+  y1/mult_74/S2_2_2/CO (FADDX2)                           0.33       1.37 r
+  y1/mult_74/S2_3_2/CO (FADDX1)                           0.32       1.68 r
+  y1/mult_74/S2_4_2/CO (FADDX1)                           0.31       1.99 r
+  y1/mult_74/U1339/QN (NAND2X0)                           0.08       2.07 f
+  y1/mult_74/U1340/QN (NAND3X0)                           0.10       2.18 r
+  y1/mult_74/U1344/QN (NAND2X0)                           0.08       2.25 f
+  y1/mult_74/U1346/QN (NAND3X0)                           0.11       2.37 r
+  y1/mult_74/S2_7_2/CO (FADDX1)                           0.32       2.69 r
+  y1/mult_74/S2_8_2/CO (FADDX2)                           0.26       2.94 r
+  y1/mult_74/S2_9_2/CO (FADDX1)                           0.25       3.20 r
+  y1/mult_74/S2_10_2/CO (FADDX2)                          0.26       3.46 r
+  y1/mult_74/S2_11_2/CO (FADDX2)                          0.33       3.79 r
+  y1/mult_74/S2_12_2/CO (FADDX2)                          0.33       4.12 r
+  y1/mult_74/S2_13_2/CO (FADDX2)                          0.33       4.45 r
+  y1/mult_74/S2_14_2/CO (FADDX1)                          0.25       4.70 r
+  y1/mult_74/U918/QN (NAND2X0)                            0.08       4.78 f
+  y1/mult_74/U919/QN (NAND3X0)                            0.10       4.88 r
+  y1/mult_74/S2_16_2/CO (FADDX1)                          0.26       5.14 r
+  y1/mult_74/U1348/QN (NAND2X0)                           0.08       5.22 f
+  y1/mult_74/U1351/QN (NAND3X0)                           0.10       5.32 r
+  y1/mult_74/U1332/QN (NAND2X0)                           0.08       5.40 f
+  y1/mult_74/U1335/QN (NAND3X0)                           0.11       5.51 r
+  y1/mult_74/S2_19_2/CO (FADDX2)                          0.32       5.83 r
+  y1/mult_74/S2_20_2/CO (FADDX1)                          0.31       6.14 r
+  y1/mult_74/U922/QN (NAND2X0)                            0.08       6.22 f
+  y1/mult_74/U580/QN (NAND3X0)                            0.10       6.31 r
+  y1/mult_74/U926/QN (NAND2X0)                            0.08       6.39 f
+  y1/mult_74/U927/QN (NAND3X0)                            0.10       6.50 r
+  y1/mult_74/U606/Q (XOR2X1)                              0.17       6.66 r
+  y1/mult_74/U607/Q (XOR2X2)                              0.15       6.81 f
+  y1/mult_74/U2380/Q (AND2X1)                             0.10       6.91 f
+  y1/mult_74/FS_1/B[24] (alu_DW01_add_2)                  0.00       6.91 f
+  y1/mult_74/FS_1/U126/QN (NOR2X0)                        0.09       7.00 r
+  y1/mult_74/FS_1/U235/QN (NOR2X0)                        0.09       7.10 f
+  y1/mult_74/FS_1/U173/Q (AND2X1)                         0.10       7.19 f
+  y1/mult_74/FS_1/U282/QN (NAND3X0)                       0.10       7.30 r
+  y1/mult_74/FS_1/U112/Q (AND3X1)                         0.12       7.41 r
+  y1/mult_74/FS_1/U263/QN (NOR2X0)                        0.08       7.50 f
+  y1/mult_74/FS_1/U232/QN (NOR2X0)                        0.08       7.57 r
+  y1/mult_74/FS_1/U260/QN (NOR2X0)                        0.09       7.66 f
+  y1/mult_74/FS_1/U264/QN (NOR2X0)                        0.08       7.74 r
+  y1/mult_74/FS_1/U154/Q (XOR2X2)                         0.15       7.90 r
+  y1/mult_74/FS_1/SUM[44] (alu_DW01_add_2)                0.00       7.90 r
+  y1/mult_74/PRODUCT[46] (alu_DW02_mult_0)                0.00       7.90 r
+  y1/U230/Q (OR2X1)                                       0.10       8.00 r
+  y1/ctemp24_reg[46]/D (DFFARX1)                          0.03       8.03 r
+  data arrival time                                                  8.03
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  y1/ctemp24_reg[46]/CLK (DFFARX1)                        0.00       2.50 r
+  library setup time                                     -0.08       2.42
+  data required time                                                 2.42
+  --------------------------------------------------------------------------
+  data required time                                                 2.42
+  data arrival time                                                 -8.03
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -5.61
+
+
+1

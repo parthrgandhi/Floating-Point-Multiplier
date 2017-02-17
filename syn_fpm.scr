@@ -1,0 +1,48 @@
+#Read the design in
+read_file -format verilog {"top.v"}
+
+#set the current design
+set current_design top
+
+#Link the design
+link
+
+#create clockand constrain the design
+
+create_clock "clk" -period  2.5 -name  "clk"
+
+set_input_delay -clock clk  -max -rise 0.4 "reset"
+set_input_delay -clock clk  -min -rise 0.1 "reset"
+
+set_input_delay -clock clk  -max -rise 0.4 "start"
+set_input_delay -clock clk  -min -rise 0.1 "start"
+
+set_output_delay -clock clk  -max -rise 0.2 "a"
+set_output_delay -clock clk  -min -rise 0.05 "a"
+
+set_output_delay -clock clk  -max -rise 0.2 "b"
+set_output_delay -clock clk  -min -rise 0.05 "b"
+
+set_output_delay -clock clk  -max -rise 0.2 "c"
+set_output_delay -clock clk  -min -rise 0.05 "c"
+
+set_output_delay -clock clk  -max -rise 0.2 "overflow"
+set_output_delay -clock clk  -min -rise 0.05 "overflow"
+
+set_output_delay -clock clk  -max -rise 0.2 "done"
+set_output_delay -clock clk  -min -rise 0.05 "done"
+
+
+set_dont_touch_network  "clk"
+
+set_max_area 0
+
+#Set operating conditions
+
+#Synthesize and generate report
+set_operating_conditions -library "saed90nm_typ" "TYPICAL"
+compile  -map_effort medium -boundary_optimization
+report_attribute >  report1
+report_area >  report2
+report_constraints -all_violators > report3
+report_timing -path full -delay max -max_paths 1 -nworst 1  > report4

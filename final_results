@@ -1,0 +1,87 @@
+Chronologic VCS simulator copyright 1991-2014
+Contains Synopsys proprietary information.
+Compiler version I-2014.03-2; Runtime version I-2014.03-2;  Nov 24 05:29 2015
+VCD+ Writer I-2014.03-2 Copyright (c) 1991-2014 by Synopsys Inc.
+                   0: reset =0 a=00000000 b=00000000 c = 00000000 overflow = 0 done = 0
+                   5: reset =1 a=00000000 b=00000000 c = 00000000 overflow = 0 done = 0
+                  15: reset =1 a=12153524 b=c03b2280 c = 00000000 overflow = 0 done = 0
+                  25: reset =1 a=c0895e81 b=10642120 c = 00000000 overflow = 0 done = 0
+                  35: reset =1 a=8484d609 b=557845aa c = 00000000 overflow = 0 done = 0
+                  45: reset =1 a=b1f05663 b=cecccc9d c = 00000000 overflow = 0 done = 0
+                  55: reset =1 a=06b97b0d b=cb203e96 c = 00000000 overflow = 0 done = 0
+                  65: reset =1 a=46df998d b=8983b813 c = ffffffff overflow = 0 done = 0
+                  75: reset =1 a=b2c28465 b=86bc380d c = 92da23da overflow = 0 done = 0
+                  85: reset =1 a=89375212 b=a9a7d653 c = 9174d3e2 overflow = 0 done = 0
+                  95: reset =1 a=00f3e301 b=359fdd6b c = 9a80d37f overflow = 0 done = 0
+                 105: reset =1 a=06d7cd0d b=eaa62ad5 c = 414044ef overflow = 0 done = 0
+                 115: reset =1 a=3b23f176 b=81174a02 c = 92683481 overflow = 0 done = 0
+                 125: reset =1 a=1e8dcd3d b=d7563eae c = 90e618b4 overflow = 0 done = 0
+                 135: reset =1 a=76d457ed b=0effe91d c = ffffffff overflow = 1 done = 0
+                 145: reset =1 a=462df78c b=e7c572cf c = ffffffff overflow = 1 done = 0
+                 155: reset =1 a=7cfde9f9 b=11844923 c = ffffffff overflow = 1 done = 0
+                 165: reset =1 a=e33724c6 b=0509650a c = b20c1312 overflow = 0 done = 0
+                 175: reset =1 a=e2f784c5 b=e5730aca c = ffffffff overflow = 1 done = 0
+                 185: reset =1 a=d513d2aa b=9e314c3c c = b66d5892 overflow = 0 done = 0
+                 195: reset =1 a=72aff7e5 b=7968bdf2 c = 465444f1 overflow = 0 done = 0
+                 205: reset =1 a=bbd27277 b=452e618a c = ee862d84 overflow = 0 done = 0
+                 215: reset =1 a=8932d612 b=20c4b341 c = 4f03352f overflow = 0 done = 0
+                 225: reset =1 a=47ecdb8f b=ec4b34d8 c = a8c495ed overflow = 0 done = 0
+                 235: reset =1 a=793069f2 b=3c20f378 c = ffffffff overflow = 1 done = 0
+                 245: reset =1 a=e77696ce b=c48a1289 c = 33ccc159 overflow = 0 done = 0
+                 255: reset =1 a=f4007ae8 b=75c50deb c = ffffffff overflow = 1 done = 0
+                 265: reset =1 a=e2ca4ec5 b=5b0265b6 c = c18f59fc overflow = 0 done = 0
+                 275: reset =1 a=2e58495c b=634bf9c6 c = ffffffff overflow = 1 done = 0
+                 285: reset =1 a=de8e28bd b=571513ae c = f4bc02ff overflow = 0 done = 0
+                 295: reset =1 a=96ab582d b=de7502bc c = 75ddd3fd overflow = 0 done = 0
+                 305: reset =1 a=b2a72665 b=150fdd2a c = 6c84ff26 overflow = 0 done = 0
+                 315: reset =1 a=b1ef6263 b=85d79a0b c = ffffffff overflow = 1 done = 0
+                 325: reset =1 a=0573870a b=ffffffff c = fe4e18c2 overflow = 0 done = 0
+                 335: reset =1 a=12153524 b=c03b2280 c = 522c5533 overflow = 0 done = 0
+                 345: reset =1 a=c0895e81 b=10642120 c = f6259147 overflow = 0 done = 0
+                 355: reset =1 a=8484d609 b=557845aa c = 35a3fd38 overflow = 0 done = 0
+                 365: reset =1 a=b1f05663 b=cecccc9d c = 883bddb4 overflow = 0 done = 0
+                 375: reset =1 a=06b97b0d b=cb203e96 c = ffffffff overflow = 1 done = 0
+                 385: reset =1 a=46df998d b=8983b813 c = ffffffff overflow = 1 done = 0
+                 395: reset =1 a=b2c28465 b=86bc380d c = 92da23da overflow = 0 done = 1
+
+
+		-------------------------------- COMPARE RESULTS------------------------------------
+
+		a=12153524 * b=c03b2280 ||  c = 92da23da  c_expected = 92da23da || o = 0 o_expected = 0 || r =PASS
+		a=c0895e81 * b=10642120 ||  c = 9174d3e2  c_expected = 9174d3e2 || o = 0 o_expected = 0 || r =PASS
+		a=8484d609 * b=557845aa ||  c = 9a80d37f  c_expected = 9a80d37f || o = 0 o_expected = 0 || r =PASS
+		a=b1f05663 * b=cecccc9d ||  c = 414044ef  c_expected = 414044ef || o = 0 o_expected = 0 || r =PASS
+		a=06b97b0d * b=cb203e96 ||  c = 92683481  c_expected = 92683481 || o = 0 o_expected = 0 || r =PASS
+		a=46df998d * b=8983b813 ||  c = 90e618b4  c_expected = 90e618b4 || o = 0 o_expected = 0 || r =PASS
+		a=b2c28465 * b=86bc380d ||  c = ffffffff  c_expected = ffffffff || o = 1 o_expected = 1 || r =PASS
+		a=89375212 * b=a9a7d653 ||  c = ffffffff  c_expected = ffffffff || o = 1 o_expected = 1 || r =PASS
+		a=00f3e301 * b=359fdd6b ||  c = ffffffff  c_expected = ffffffff || o = 1 o_expected = 1 || r =PASS
+		a=06d7cd0d * b=eaa62ad5 ||  c = b20c1312  c_expected = b20c1312 || o = 0 o_expected = 0 || r =PASS
+		a=3b23f176 * b=81174a02 ||  c = ffffffff  c_expected = ffffffff || o = 1 o_expected = 1 || r =PASS
+		a=1e8dcd3d * b=d7563eae ||  c = b66d5892  c_expected = b66d5892 || o = 0 o_expected = 0 || r =PASS
+		a=76d457ed * b=0effe91d ||  c = 465444f1  c_expected = 465444f1 || o = 0 o_expected = 0 || r =PASS
+		a=462df78c * b=e7c572cf ||  c = ee862d84  c_expected = ee862d84 || o = 0 o_expected = 0 || r =PASS
+		a=7cfde9f9 * b=11844923 ||  c = 4f03352f  c_expected = 4f03352f || o = 0 o_expected = 0 || r =PASS
+		a=e33724c6 * b=0509650a ||  c = a8c495ed  c_expected = a8c495ed || o = 0 o_expected = 0 || r =PASS
+		a=e2f784c5 * b=e5730aca ||  c = ffffffff  c_expected = ffffffff || o = 1 o_expected = 1 || r =PASS
+		a=d513d2aa * b=9e314c3c ||  c = 33ccc159  c_expected = 33ccc159 || o = 0 o_expected = 0 || r =PASS
+		a=72aff7e5 * b=7968bdf2 ||  c = ffffffff  c_expected = ffffffff || o = 1 o_expected = 1 || r =PASS
+		a=bbd27277 * b=452e618a ||  c = c18f59fc  c_expected = c18f59fc || o = 0 o_expected = 0 || r =PASS
+		a=8932d612 * b=20c4b341 ||  c = ffffffff  c_expected = ffffffff || o = 1 o_expected = 1 || r =PASS
+		a=47ecdb8f * b=ec4b34d8 ||  c = f4bc02ff  c_expected = f4bc02ff || o = 0 o_expected = 0 || r =PASS
+		a=793069f2 * b=3c20f378 ||  c = 75ddd3fd  c_expected = 75ddd3fd || o = 0 o_expected = 0 || r =PASS
+		a=e77696ce * b=c48a1289 ||  c = 6c84ff26  c_expected = 6c84ff26 || o = 0 o_expected = 0 || r =PASS
+		a=f4007ae8 * b=75c50deb ||  c = ffffffff  c_expected = ffffffff || o = 1 o_expected = 1 || r =PASS
+		a=e2ca4ec5 * b=5b0265b6 ||  c = fe4e18c2  c_expected = fe4e18c2 || o = 0 o_expected = 0 || r =PASS
+		a=2e58495c * b=634bf9c6 ||  c = 522c5533  c_expected = 522c5533 || o = 0 o_expected = 0 || r =PASS
+		a=de8e28bd * b=571513ae ||  c = f6259147  c_expected = f6259147 || o = 0 o_expected = 0 || r =PASS
+		a=96ab582d * b=de7502bc ||  c = 35a3fd38  c_expected = 35a3fd38 || o = 0 o_expected = 0 || r =PASS
+		a=b2a72665 * b=150fdd2a ||  c = 883bddb4  c_expected = 883bddb4 || o = 0 o_expected = 0 || r =PASS
+		a=b1ef6263 * b=85d79a0b ||  c = ffffffff  c_expected = ffffffff || o = 1 o_expected = 1 || r =PASS
+		a=0573870a * b=b897be71 ||  c = ffffffff  c_expected = ffffffff || o = 1 o_expected = 1 || r =PASS
+$finish called from file "top_fixture.v", line 298.
+$finish at simulation time                  400
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 400
+CPU Time:      0.460 seconds;       Data structure size:   0.0Mb
+Tue Nov 24 05:29:26 2015
